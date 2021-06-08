@@ -30,9 +30,12 @@ class _MyHomePageState extends State<MyHomePage> {
       appBar: AppBar(
         title: Text(widget.title),
         actions: [
-          IconButton(icon: Icon(Icons.logout), onPressed: () {
-            Provider.of<PageNotifier>(context, listen: false).goToOtherPage(AuthPage.pageNume);
-          }),
+          IconButton(
+              icon: Icon(Icons.login),
+              onPressed: () {
+                Provider.of<PageNotifier>(context, listen: false)
+                    .goToOtherPage(AuthPage.pageNume);
+              }),
         ],
       ),
       body: Center(

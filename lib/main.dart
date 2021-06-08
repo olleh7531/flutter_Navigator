@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [ChangeNotifierProvider(create: (_)=> PageNotifier())],
       child: MaterialApp(
+
         title: 'Flutter Demo',
         debugShowCheckedModeBanner: false,
 
